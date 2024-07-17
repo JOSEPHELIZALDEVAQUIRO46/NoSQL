@@ -1,0 +1,159 @@
+:root {
+    --primary: #3b5998;
+    --dark: #000000;
+    --light: #ffffff;
+    --grey: #545454;
+    --info: #4385F4;
+}
+
+.wrapper {
+  margin-left: 18%;
+  }
+  
+  #sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    background-color: #fffcfc;
+    color: #fff;
+  }
+  
+  #sidebar.sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #f2eeee;
+  }
+  
+  #sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  #sidebar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #sidebar a:hover {
+    color: #ccc;
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #d8d8d8;
+}
+.container {
+
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.table {
+    margin-bottom: 20px;
+}
+.table th, .table td {
+    vertical-align: middle;
+}
+.btn-edit, .btn-delete {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 50%;
+    border: none;
+    background-color: #337ab7;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-edit:hover, .btn-delete:hover {
+    background-color: #23527c;
+}
+.btn-delete {
+    background-color: #d9534f;
+}
+.btn-delete:hover {
+    background-color: #c9302c;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal.show {
+    display: block;
+}
+.modal-dialog {
+    max-width: 400px;
+    margin: 40px auto;
+}
+.modal-content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+.modal-header {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.modal-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.modal-body {
+    padding: 20px;
+}
+.modal-footer {
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    text-align: right;
+}
+
+.table tr, th{
+  vertical-align: bottom;
+  border: 2px solid  #222323;
+}
+
+.table thead th {
+  border-bottom: 2px solid #222323;
+}
+
+.table td{
+  border: 2px solid #222323;
+}
+
+.cerrar{
+  display: flex;
+  margin-top: 130%;
+}
+
+.cerra{
+  display: flex;
+  margin-top: 110%;
+}
+
+.bb{
+  margin-left: 350px;
+}
+
+.vid{
+  margin-top: 30px;
+  margin-left: 300px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de NoSQL - Información sobre NoSQL</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav id="sidebar" class="bg-dark">
+            <div class="sidebar-header">
+            </div>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="nosql.html">NoSQL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="Tipos_de_NoSQL.html">Tipos de NoSQL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Casos_de_uso_NoSQL.html">Casos de Uso de NoSQL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ventajas_desventajas.html">Ventajas y Desventajas de NoSQL</a>
+                </li>
+                <div class="cerrar">
+                    <a href="index.html">
+                        <li>Cerrar Sesión</li>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+        
+        <div class="main p-3">
+            <div>
+                <h1 class="text-center" >Tipos de NoSQL</h1>
+                <div class="tipo-nosql">
+                    <h2>1. Documentales</h2>
+                    <img src="img/documentos.png" alt="Base de datos documental" style="max-width: 40%;">
+                    <p>
+                        Las bases de datos documentales son ideales para datos semi-estructurados y desestructurados. Utilizan documentos, como JSON o BSON, para almacenar datos. Esto permite una estructura flexible y dinámica, adaptándose fácilmente a los cambios en los datos sin necesidad de redefinir el esquema.
+                    </p>
+                    <p>
+                        Los documentos pueden contener una amplia variedad de datos, incluyendo listas, mapas y otros documentos anidados, lo que las hace ideales para aplicaciones web, gestión de contenido y almacenamiento de datos de usuario. Ejemplos populares incluyen MongoDB y CouchDB.
+                    </p>
+                    <p>
+                        <strong>Ventajas:</strong> Flexibilidad en el esquema, fácil de escalar horizontalmente, y adecuado para datos semi-estructurados.
+                        <br>
+                        <strong>Desventajas:</strong> No es ideal para consultas complejas y transacciones múltiples.
+                    </p>
+                </div>
+                <div class="tipo-nosql">
+                    <h2>2. Clave-Valor</h2>
+                    <img src="img/clave.png" alt="Base de datos clave-valor"  style="max-width: 40%;">
+                    <p>
+                        Las bases de datos clave-valor son óptimas para operaciones de lectura/escritura rápidas y simples. Almacenan datos como pares clave-valor, donde cada clave única se asocia a un valor. Este modelo es extremadamente simple y permite un acceso muy rápido a los datos.
+                    </p>
+                    <p>
+                        Son eficientes para cachés y sesiones, y se utilizan a menudo en aplicaciones que requieren rendimiento de alta velocidad, como almacenamiento en caché de resultados de consultas, gestión de sesiones y almacenamiento de perfiles de usuario. Ejemplos son Redis y DynamoDB.
+                    </p>
+                    <p>
+                        <strong>Ventajas:</strong> Alta velocidad y simplicidad en el modelo de datos.
+                        <br>
+                        <strong>Desventajas:</strong> No es adecuado para datos complejos y relaciones entre datos.
+                    </p>
+                </div>
+                <div class="tipo-nosql">
+                    <h2>3. Columnares</h2>
+                    <img src="img/columnas.png" alt="Base de datos columnar"  style="max-width: 40%;">
+                    <p>
+                        Las bases de datos columnares son adecuadas para grandes conjuntos de datos y análisis. Almacenan datos en columnas en lugar de filas, lo que optimiza las consultas analíticas que requieren el procesamiento de grandes volúmenes de datos en paralelo.
+                    </p>
+                    <p>
+                        Este modelo permite una compresión de datos más eficiente y una rápida recuperación de columnas individuales de datos, lo que es ideal para sistemas de business intelligence y big data. Ejemplos son Cassandra y HBase.
+                    </p>
+                    <p>
+                        <strong>Ventajas:</strong> Alta eficiencia en consultas analíticas y compresión de datos.
+                        <br>
+                        <strong>Desventajas:</strong> Menos adecuado para transacciones frecuentes y datos altamente relacionados.
+                    </p>
+                </div>
+                <div class="tipo-nosql">
+                    <h2>4. De Grafos</h2>
+                    <img src="img/grafo.jpeg" alt="Base de datos de grafos" style="max-width: 40%;">
+                    <p>
+                        Las bases de datos de grafos son perfectas para datos con relaciones complejas. Modelan datos usando nodos, aristas y propiedades, permitiendo consultas eficientes de relaciones y patrones complejos.
+                    </p>
+                    <p>
+                        Son ideales para aplicaciones como redes sociales, sistemas de recomendación y análisis de fraudes, donde las relaciones y las interacciones entre los datos son fundamentales. Ejemplos son Neo4j y ArangoDB.
+                    </p>
+                    <p>
+                        <strong>Ventajas:</strong> Eficiencia en consultas de relaciones complejas y modelado intuitivo de datos.
+                        <br>
+                        <strong>Desventajas:</strong> Menos eficiente para operaciones masivas de lectura/escritura.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
